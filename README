@@ -1,0 +1,34 @@
+*** ReadMe for Alore vim syntax ***
+
+
+Installation
+------------
+
+1. Download the syntax file 'alore.vim'.
+
+2. Edit your .vimrc:
+
+  * Add this line to turn on syntax highlighting:
+
+      syntax on
+
+  * Add Alore syntax to .vimrc (replace $PATH with actual path to alore.vim):
+
+      au BufRead,BufNewFile *.alo set filetype=alore
+      au! Syntax alore source $PATH/alore.vim
+
+
+Compatibility
+-------------
+
+Tried with vim 7.2.330 in Ubuntu 10.04. Probably works with any reasonably
+recent version of vim.
+
+In Ubuntu, you may need to do "apt-get install vim" to install the full
+version of vim that includes support for syntax highlighting.
+
+
+License
+-------
+
+Public domain
